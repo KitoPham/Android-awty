@@ -46,7 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:inputType="phone"
-        android:text="1234568697"
+        android:text=""
         android:ems="3"
         android:id="@+id/phonenumber"
         android:layout_weight="0.10"

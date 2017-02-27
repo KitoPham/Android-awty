@@ -6,6 +6,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
+import android.telephony.SmsManager;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -30,7 +31,8 @@ public class schedulingService extends IntentService {
         mHandler.post(new Runnable() {
             @Override
             public void run() {
-                Toast.makeText(getApplicationContext(), MyApplication.alarmText, Toast.LENGTH_SHORT).show();
+                Log.i("Operations:", "Text Sent");
+                SmsManager.getDefault().sendTextMessage(MyApplication.phone,null,MyApplication.alarmText, null, null);
             }
         });
         alarmReceiver.completeWakefulIntent(intent);

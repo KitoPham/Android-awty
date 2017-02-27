@@ -10,6 +10,7 @@ public class MyApplication extends Application {
 
     static String alarmText;
     static int intervalTime;
+    static String phone;
 
     public void onCreate(){
         super.onCreate();

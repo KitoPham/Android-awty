@@ -17,7 +17,7 @@ public class alarmReceiver  extends WakefulBroadcastReceiver{
 
     private AlarmManager manager;
     private PendingIntent alarmIntent;
-    private  int intervalNum;
+
 
     @Override
     public void onReceive(Context context, Intent intent) {
